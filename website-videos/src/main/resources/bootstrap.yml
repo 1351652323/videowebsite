@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: videos
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        namespace: aae9e5c7-576e-4524-b315-b1f5d5e07f01
+        prefix: servicecommon
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        enabled: true
+server:
+  port: 8004
